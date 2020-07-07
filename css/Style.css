@@ -1,0 +1,136 @@
+/* Import fonts from google font */
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+    background: #ffe259;
+    background: var(--mango-gradient);
+}
+
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --mango-gradient : linear-gradient(to right, #ffa751, #ffe259);
+    --text-color: #F7F9F9;
+    --Montserrat: "Montserrat", cursive;
+    --Lobster: "Lobster", cursive;
+    --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+    --border-color: rgba(0,0,0,0.329);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    max-height: 610px;
+}
+
+.container .panel{
+    width: 60%;
+    height: 75%;
+    
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100%;
+    background: #fff;
+}
+
+.liquid {
+    text-align: left;
+    padding: 1rem 2rem;
+    color: black;
+    font-family: var(--Montserrat);
+}
+
+.owl-carousel{
+    width: 100%;
+    height: 320px;
+    max-height: 330px;
+}
+
+.owl-carousel .owl-item .login_img{
+    float: right;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 3rem;
+}
+
+.btn{
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 3.5rem;
+    background: #00ccff;
+    color: whitesmoke;
+    font-size: .8rem;
+    font-family: var(--Montserrat);
+    cursor: pointer;
+}
+
+.login .btn-signup, form .btn-login{
+    float: right;
+    margin: 0.5rem;
+}
+
+.titles{
+    margin-bottom: 2rem;
+}
+
+form{
+    height: 55%;
+    max-height: 300px;
+    margin-top: 5.5rem;
+}
+
+form h3, form h2, form h6{
+    font-family: var(--Montserrat);
+    padding: 0;
+    margin: 0;
+    padding-left: 0rem;
+}
+
+.col h1{
+    text-align: center;
+    padding: 4rem 5rem;
+    font-family: var(--Montserrat);
+}
+
+form h6{
+    padding-left: 1.5rem;
+    font-family: var(--Lobster);
+    color: #444444d2;
+}
+
+form .form-group{
+    text-align: left;
+    border: 1px solid var(--border-color);
+    margin-top: .9rem;
+    margin-right: 2rem;
+    border-radius: 3rem;
+}
+
+form .form-group .form-input{
+    padding: .5rem 1rem;
+    background: transparent;
+    border: none;
+    font-family: var(--Montserrat);
+    font-size: .9rem;
+    overflow: hidden;
+}
+
+
+form .input-icon{
+    display: inline;
+    color: var(--border-color);
+}
+
+form .btn-login{
+    float: none;
+    padding: 0.7rem 3rem;
+    margin-left: 2rem;
+}
